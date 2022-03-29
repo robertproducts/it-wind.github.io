@@ -1,0 +1,9 @@
+@font-face {
+    font-family: header-title-bold;
+    src: url(../fonts/header-bold.otf);
+}
+
+@font-face {
+    font-family: visit-card-title;
+    src: url(../fonts/visit-card-title.otf);
+}
