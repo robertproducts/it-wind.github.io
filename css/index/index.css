@@ -444,9 +444,15 @@ footer {
 	background: #f7f7f7;
 }
 
-.why-i-should-do-this {
+.main-section-devs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.feedback-article {
     display: flex;
     flex-direction: column;
-
-    text-align: center;
+    justify-content: space-between;
 }

@@ -19,7 +19,7 @@
         <a href="#header" id="scroll_top" title="Наверх"></a>
         <nav id="nav" class="nav">
             <div class="nav-block" id="feed">
-                <a href="index.html" title="Обновить страницу"><img class="nav-logo" src="img/banner-footer.png"></a>
+                <a href="http://digitalwind.ru/" target="_blank" rel="nofollow"><img class="nav-logo" src="img/banner-footer.png"></a>
             </div>
             <div class="nav-block">
                 <a href="#about">
@@ -64,6 +64,21 @@
                 <h3 class="main-section-about-title"><strong>Удачного использования!</strong></h3>
             </section>
             <hr>
+            <section id="developers" class="main-section-apps">
+                <h1 class="main-section-apps-title"><strong>Команда разработчиков dev.EXE</strong></h1>
+                <br>
+                <div class="main-section-devs">
+                    <div class="card" style="width: 18rem; position: static;">
+                        <img src="img/robert.jpg" class="card-img-top" alt="Создатель dev.EXE">
+                        <div class="card-body">
+                            <h5 class="card-title">Роберт Толстов</h5>
+                            <p class="card-text">Главный разработчик.<br>Создатель dev.EXE.<br>Автор приложений <strong>MathBasics</strong> и <strong>TestBasics</strong></p>
+                            <a href="https://vk.com/robertproducts" target="_blank"><button class="btn btn-primary">Написать ВК</button></a>
+                        </div>
+                    </div>    
+                </div>    
+            </section>
+            <hr>
             <section id="apps" class="main-section-apps">
                 <h1 class="main-section-apps-title"><strong>Скачай КАЖДОЕ ПРИЛОЖЕНИЕ!</strong></h1>
                 <section id="mathbasics" class="main-section-apps-card">
@@ -84,24 +99,28 @@
                         <h5>
                             TestBasics - приложение, которое даёт возможность просто и быстро создавать легко кастомизируемые тесты и тут же проходить их! Попробуйте себя в роли учителя!
                         </h5>
-                        <strong>Стабильная версия: <a href="installers/testbasics/22.2.27.exe" download>22.3.11</a></strong>
+                        <strong>Стабильная версия: <a href="installers/testbasics/22.2.27.exe" download>22.2.27</a></strong>
                     </div>
                 </section>
             </section>
             <hr>
             <section id="feedback" class="main-section-feedback">
-                <article class="main-section-feedback-title">Напишите нам!</article>
-                <form action="feedback/feedback.php" class="feedback-form">
-                    <input class="feedback-form-item" type="text" placeholder="Имя" size="60" autocomplete required>
+                <div class="feedback-article">
+                    <article class="main-section-feedback-title">Напишите нам!</article>
+                    <h6 style="color: #00000055">Мы используем <strong>Google Forms</strong> для обработки формы обратной связи</h6>
+                </div>
+                <form action="" class="feedback-form" id="feedback-form" method="POST" target="no-target">
+                    <input id="name" name="name" class="feedback-form-item" type="text" placeholder="Имя" size="60" autocomplete required>
                     <div class="feedback-insert-block">
-                        <input class="feedback-form-shorter-item" type="email" placeholder="Электронная почта (необязательно)" size="60" autocomplete>
-                        <input class="feedback-form-shorter-item" type="tel" placeholder="Номер телефона (необязательно)" size="60" autocomplete> 
+                        <input id="email" name="email" class="feedback-form-shorter-item" type="email" placeholder="Электронная почта (необязательно)" size="60" autocomplete>
+                        <input id="phone" name="phone" class="feedback-form-shorter-item" type="tel" placeholder="Номер телефона (необязательно)" size="60" autocomplete> 
                     </div>
-                    <textarea class="feedback-form-area" placeholder="Напишите отзыв (до 1000 символов)" maxlength="1000" required></textarea>
+                    <textarea id="mainfeedbackarea" name="mainfeedbackarea" class="feedback-form-area" placeholder="Напишите отзыв (до 1000 символов)" maxlength="1000" required></textarea>
                     <div id="submit-div">
-                        <input type="submit" name="send-confirm" value="Отправить" class="feedback-submit-button">
+                        <input type="submit" id="submit" name="send-confirm" value="Отправить" class="feedback-submit-button">
                     </div>
                 </form>
+                <iframe src="#" id="no-target" name="no-target" style="visibility:hidden; width: 0; height: 0; padding: 0; margin: 0;"></iframe>
             </section>
             <hr>
             <section id="downloads" class="main-section-downloads">
@@ -172,56 +191,67 @@
                                 <td>22.3.5 (бета)</td>
                                 <td>5.03.2022</td>
                                 <td>Windows 7+</td>
-                                <td><a href="installers/testbasics/22.3.5.zip" download>Архив (.zip)</a></td>
+                                <td><a href="installers/testbasics/22.3.5.dev.zip" download>Архив (.zip)</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-            <section class="why-i-should-do-this">
-                <h4>P.S: Также данный сайт отправлен на конкурс <strong>"Цифровой ветер"!</strong></h4>
-                <a href="http://www.digitalwind.ru/" target="_blank"><img src="img/banner-footer.png" alt="Картинка кликабельна" title="Картинка кликабельна"></a>
-            </section>
-            <footer id="footer">
-                <div class="footer-block">
-                    <h4>
-                        Остались вопросы?
-                    </h4>
-                    <h6>
-                        Напишите нам на <a href="mailto:robtolstov@gmail.com">почту</a>!
-                    </h6>
-                    <br>
-                    <h6>dev.EXE 2022. Все права защищены</h6>
-                </div>
-                <div class="footer-block">
-                    <a href="#about">
-                        <div class="footer-nav-item">
-                            О нас
-                        </div>
-                    </a>
-                    <a href="#feedback">
-                        <div class="footer-nav-item">
-                            Обратная связь
-                        </div>
-                    </a>
-                    <a href="#downloads">
-                        <div class="footer-nav-item">
-                            Скачать
-                        </div>
-                    </a>
-                </div>
-                <div class="footer-block">
-                    <a href="https://www.vk.com/desktopexe" target="_blank">
-                        <h6><img src="img/vk.png" class="social-footer">ВК (группа)</h6>
-                    </a>
-                    <a href="https://www.instagram.com/desktopexe" target="_blank">
-                        <h6><img src="img/insta.png" class="social-footer">Инстаграм (группа)</h6>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCZCoIJ75QzPzRS5jqjBnnpA" target="_blank">
-                        <h6><img src="img/yt.png" class="social-footer">YouTube</h6>
-                    </a>
-                </div>
-            </footer>
         </main>
+        <footer id="footer">
+            <div class="footer-block">
+                <h4>
+                    Остались вопросы?
+                </h4>
+                <h6>
+                    Напишите нам на <a href="mailto:robtolstov@gmail.com">почту</a>!
+                </h6>
+                <br>
+                <h6>dev.EXE 2022. Все права защищены</h6>
+            </div>
+            <div class="footer-block">
+                <a href="#about">
+                    <div class="footer-nav-item">
+                        О нас
+                    </div>
+                </a>
+                <a href="#feedback">
+                    <div class="footer-nav-item">
+                        Обратная связь
+                    </div>
+                </a>
+                <a href="#downloads">
+                    <div class="footer-nav-item">
+                        Скачать
+                    </div>
+                </a>
+            </div>
+            <div class="footer-block">
+                <a href="https://www.vk.com/desktopexe" target="_blank">
+                    <h6><img src="img/vk.png" class="social-footer">ВК (группа)</h6>
+                </a>
+                <a href="https://www.instagram.com/desktopexe" target="_blank">
+                    <h6><img src="img/insta.png" class="social-footer">Инстаграм (группа)</h6>
+                </a>
+                <a href="https://www.youtube.com/channel/UCZCoIJ75QzPzRS5jqjBnnpA" target="_blank">
+                    <h6><img src="img/yt.png" class="social-footer">YouTube</h6>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+    $('#feedback-form').one('submit', function(){
+            var name = 'entry.897090288=' + encodeURIComponent($('#name').val());
+            var phone = 'entry.1425577813=' + encodeURIComponent($('#phone').val());
+            var mainfeedbackarea = 'entry.1849816006=' + encodeURIComponent($('#mainfeedbackarea').val());
+            var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfr8o376JmqQAeVSCiX6hJKFoTUMqp28ORntNnrHCLMdO1ztw/viewform?usp=sf_link/formResponse?'; 
+            var submitRef = '&submit=-8775337282443211498';
+            var submitURL = (baseURL+'&'+name+'&'+phone+'&'+mainfeedbackarea+submitRef);
+            console.log(submitURL);
+            $(this)[0].action=submitURL;
+            alert("Форма успешно отправлена! Спасибо за отзыв!");
+            location.reload();
+        });
+    </script>
     </body>
 </html>
